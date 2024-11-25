@@ -1,0 +1,176 @@
+.signin {
+    border-bottom: 2px solid var(--whi-color);
+}
+
+.signin .container {
+    padding: 1.5em 3em 2em 3em;
+    margin: 10em auto;
+    border-radius: 4.2px;
+    box-shadow: 0px 15px 10px -2px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--whi-color);
+    background-color: var(--whi-color);
+}
+
+/* 64ac15 */
+h4 {
+    color: var(--gray-color);
+    margin: 30px 0;
+    text-align: center;
+    font-size: var(--h1-size);
+}
+
+h5 {
+  color: var(--gray-color);
+  margin: 30px 0;
+  text-align:left;
+  font-size: var(--h2-size);
+}
+
+
+.col {
+  padding-bottom: 10px;
+}
+body > div.signin > div > form > div:nth-child(2) > div:nth-child(2) > div {
+  width: 95%;
+}
+
+.question {
+  color: var(--gray-color);
+  font-size: var(--h4-size);
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 0 0 5px;
+}
+.question label {
+  padding-bottom: 1px;
+  border-bottom: .5px solid var(--whi-color);
+  font-size: var(--normal-size);
+}
+.question input[type="checkbox"]:checked + label {
+  color: var(--six-color);
+  border-bottom: .5px solid var(--six-color);
+}
+
+.input-group {
+    margin-bottom: 1em;
+    zoom: 1;
+}
+
+.nextBtn {
+    width: 150px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: -40px; 
+    font-size: var(--h3-size);
+    border-color: var(--sev-color);
+    box-shadow: inset 0 0 0 2.5em var(--whi-color);
+    color: var(--sev-color);
+    font-weight: var(--font-semi);
+}
+.nextBtn:hover {
+    box-shadow: inset 0 0 0 2.5em var(--sev-color);
+    color: var(--whi-color);
+    border-color: var(--whi-color);
+}
+
+
+
+
+
+
+/* Doctor Appointment */
+.appointCard {
+  border: 2px solid var(--six-color);
+  padding: 10px;
+  margin: 20px 0;
+  transition: .2s;
+}
+/* .cardActive {
+  box-shadow: inset 0 0 1.2rem var(--six-color);
+} */
+.appointCard h5 {
+  text-align: center;
+  font-size: var(--normal-size);
+  color: var(--six-color);
+  line-height: 15px;
+}
+.appointCard .docName {
+  color: var(--gray-color);
+  font-size: var(--h1-size);
+}
+.appointCard .docSpecial {
+  line-height: 20px;
+}
+.appointCard .docPlace {
+  line-height: inherit;
+  color: var(--title-color);
+  font-size: var(--small-size);
+  margin-top: -15px;
+}
+.appointCard .detailSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.appointCard .detailSection .time,
+.appointCard .detailSection .price,
+.appointCard .detailSection .phone {
+  text-align: center;
+}
+.appointCard .detailSection .time .iconPic,
+.appointCard .detailSection .price .iconPic{
+  width: 50px;
+  height: 50px;
+  padding-bottom: 5px;
+}
+.appointCard .detailSection .phone .iconPic {
+  font-size: var(--h2-size);
+  width: 25px;
+  height: 50px;
+  color: var(--six-color);
+}
+.appointCard .detailSection .time h6,
+.appointCard .detailSection .price h6,
+.appointCard .detailSection .phone h6 {
+  font-size: var(--normal-size);
+}
+.appointCard .detailSection .time p,
+.appointCard .detailSection .price p,
+.appointCard .detailSection .phone p  {
+  color: var(--sev-color);
+  font-weight: var(--font-semi);
+}
+.reserve {
+  text-align: center;
+  margin-bottom: -10px;
+}
+.book {
+  text-align: center;
+  margin: 20px auto;
+  font-size: var(--small-size);
+  border-color: var(--whi-color);
+  display: block;
+  box-shadow: inset 0 0 0 2.5em var(--sev-color);
+}
+.book:hover {
+  box-shadow: inset 0 -120px 0 0em var(--fir-color);
+  color: var(--whi-color);
+  border-color: var(--whi-color);
+  transform: scale(.95);
+}
+.another {
+  color: var(--title-color);
+  transition: var(--main-tra);
+}
+.another:hover {
+  color: var(--sev-color);
+}
+
+@media (max-width: 767px) {
+  .appointCard .detailSection  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
